@@ -2,11 +2,11 @@
 
 import { useState } from "react"
 
-export const Question8 = ({ updateFormData, value }) => {
-  // Function to handle the user's selection and update the form's favoriteBand field
-  const handleQuestion8Change = (event) => {
+export const AnimalsHappy = ({ updateFormData, value }) => {
+  // Function to handle the user's selection and update the form's favoriteAnimal field
+  const handleAnimalsHappy = (event) => {
     // Call updateFormData to update the "favoriteBand" field with the selected value
-    updateFormData("question8", event.target.value);
+    updateFormData("animalsHappy", event.target.value);
   };
 
   const alternatives = ["Yes", "No"]
@@ -34,4 +34,4 @@ export const Question8 = ({ updateFormData, value }) => {
 
   }
 
-
+}

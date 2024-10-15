@@ -7,11 +7,11 @@
 // Mickey mouse - mouse
 // Chip n' Dale - chipmunks 
 
-export const Question9 = ({ updateFormData, value }) => {
+export const FavouriteDisneyAnimal = ({ updateFormData, value }) => {
   // Function to handle the user's selection and update the form's favoriteBand field
-  const handleQuestion9Change = (event) => {
+  const handleFavouriteDisneyAnimalChange = (event) => {
     // Call updateFormData to update the "favoriteBand" field with the selected value
-    updateFormData("question7", event.target.value);
+    updateFormData("favouriteDisneyAnimal", event.target.value);
   };
 
   return (
@@ -21,7 +21,7 @@ export const Question9 = ({ updateFormData, value }) => {
 
       {/* Dropdown to select the user's favorite band, controlled by the "value" prop */}
       {/* The onChange event triggers the handleFavoriteBandChange function to update the form data */}
-      <select value={value} onChange={handleQuestion9Change}>
+      <select value={value} onChange={handleFavouriteDisneyAnimalChange}>
         <option value="">Select a</option>
         <option value="simba">Simba-Lion in The Lion King</option>
         <option value="lady-tramp">Lady and the Tramp-Dogs</option>
