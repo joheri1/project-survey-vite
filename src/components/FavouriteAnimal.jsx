@@ -1,20 +1,17 @@
 // Whats your favourite animal - text box
 
-export const FavouriteAnimal = ({ updateFormData, value }) => {
-  // Function to handle the user's selection and update the form's Question7 field
-  const handleFavouriteAnimalChange = (event) => {
-    // Call updateFormData to update the "FavouriteAnimal" field with the selected value
-    updateFormData("favouriteAnimal", event.target.value);
-  };
+import { useState } from "react"
+export const FavouriteAnimal = () => {
+  const [favouriteAnimal, setFavouriteAnimal] = useState("")
 
   return (
     <div className="border-box">
-      {/* Label for the favourite animal input field */}
-      <label>Favourite animal?:</label>
-
-      {/* Input field to capture the user's name, with the value controlled by the "value" prop */}
-      {/* The onChange event triggers the handleNameChange function to update the form data */}
-      <input type="text" value={value} onChange={handleFavouriteAnimalChange} />
+      <p>Favorite Animal:</p>
+      <input
+        type="text"
+        onChange={(event) => setFavouriteAnimal(event.target.value)}
+        value={favouriteAnimal}
+      />
     </div>
   );
 };

@@ -1,3 +1,13 @@
+import { AnimalsHappy } from "./components/AnimalsHappy.jsx"
+import { FavouriteAnimal } from "./components/FavouriteAnimal.jsx"
+import { FavouriteDisneyAnimal } from "./components/FavouriteDisneyAnimal.jsx"
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      <AnimalsHappy />
+      <FavouriteAnimal />
+      <FavouriteDisneyAnimal />
+    </>
+  );
 };

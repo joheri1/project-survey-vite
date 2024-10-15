@@ -7,29 +7,29 @@
 // Mickey mouse - mouse
 // Chip n' Dale - chipmunks 
 
-export const FavouriteDisneyAnimal = ({ updateFormData, value }) => {
-  // Function to handle the user's selection and update the form's favoriteBand field
-  const handleFavouriteDisneyAnimalChange = (event) => {
-    // Call updateFormData to update the "favoriteBand" field with the selected value
-    updateFormData("favouriteDisneyAnimal", event.target.value);
-  };
+
+import { useState } from "react"
+export const FavouriteDisneyAnimal = () => {
+  const [favourite, setFavourite] = useState("")
 
   return (
-    <div className="border-box">
-      {/* Label for the favorite band dropdown */}
-      <label>Favorite Disney Animal:</label>
-
-      {/* Dropdown to select the user's favorite band, controlled by the "value" prop */}
-      {/* The onChange event triggers the handleFavoriteBandChange function to update the form data */}
-      <select value={value} onChange={handleFavouriteDisneyAnimalChange}>
-        <option value="">Select a</option>
-        <option value="simba">Simba-Lion in The Lion King</option>
-        <option value="lady-tramp">Lady and the Tramp-Dogs</option>
-        <option value="nemo">Nemo-Clownfish in Finding Nemo</option>
-        <option value="aristocats">Thomas O' Malley-Cat in Aristocats</option>
-        <option value="mickey">Mickey Mouse- Famous Disney Mouse</option>
-        <option value="chip-dale">Chip 'n' Dale - Chipmunks </option>
-      </select>
+    <div>
+      <p>Favorite Disney Animal:</p>
+      <form>
+        <select
+          onChange={event => setFavourite(event.target.value)}
+          value={favourite}
+        >
+          <option value="">Select a Disney Animal</option>
+          <option value="simba">Simba-Lion in The Lion King</option>
+          <option value="lady-tramp">Lady and the Tramp-Dogs</option>
+          <option value="nemo">Nemo-Clownfish in Finding Nemo</option>
+          <option value="aristocats">Thomas O' Malley-Cat in Aristocats</option>
+          <option value="mickey">Mickey Mouse- Famous Disney Mouse</option>
+          <option value="chip-dale">Chip 'n' Dale - Chipmunks </option>
+        </select>
+      </form>
     </div>
-  );
+  )
 };
+
