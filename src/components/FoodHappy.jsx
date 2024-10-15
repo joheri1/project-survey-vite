@@ -3,20 +3,15 @@
 // Does food make you happy? - radio buttons
 
 /**
- * This component is used to collect and update if food makes the user happy in a multi-step form. 
+ * This component is used to collect and update if food makes the user happy in a multi-step form.
  */
 
-import { useState } from 'react'
-
-const foodHappyOptions = [
-    "Yes",
-    "No",
-    "Sometimes"
-]
-
-const App = () => {
-    const [foodHappy, setFoodHappy] = useState("") 
-    /* useState for tracking selected option */
+const FoodHappy = ({ updateFormData, value }) => {
+    const foodHappyOptions = [
+        "Yes",
+        "No",
+        "Sometimes"
+    ]
 
     return (
         <form> 
@@ -26,9 +21,8 @@ const App = () => {
                     <input
                         type="radio"
                         value={option}
-                        onChange={(event) => setFoodHappy(event.target.value)}
-                        checked={foodHappy === option} 
-                        /*Check if the option is selected*/
+                        onChange={(event) => updateFormData("foodHappy", event.target.value)}
+                        checked={value === option}
                     />
                     {option}
                 </label>
@@ -37,9 +31,10 @@ const App = () => {
     )
 }
 
-export default App
+export default FoodHappy
 
 /**
  * Summary:
- * This component displays radio buttons to ask if food makes the user happy. The options are "Yes," "No," and "Sometimes." The user's selection is stored in the component's state via useState. 
+ * This component displays radio buttons to ask if food makes the user happy. The user's selection is updated through the `updateFormData` function.
  */
+
