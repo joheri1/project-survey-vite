@@ -23,11 +23,11 @@ export const Question9 = ({ updateFormData, value }) => {
       {/* The onChange event triggers the handleFavoriteBandChange function to update the form data */}
       <select value={value} onChange={handleQuestion9Change}>
         <option value="">Select a</option>
-        <option value="simba">Simba-The Lion King</option>
-        <option value="lady-tramp">Lady and the Tramp</option>
+        <option value="simba">Simba-Lion in The Lion King</option>
+        <option value="lady-tramp">Lady and the Tramp-Dogs</option>
         <option value="nemo">Nemo-Clownfish in Finding Nemo</option>
         <option value="aristocats">Thomas O' Malley-Cat in Aristocats</option>
-        <option value="mickey">Mickey Mouse</option>
+        <option value="mickey">Mickey Mouse- Famous Disney Mouse</option>
         <option value="chip-dale">Chip 'n' Dale - Chipmunks </option>
       </select>
     </div>
