@@ -1,3 +1,13 @@
+import { MoodQuestion } from "./components/MoodQuestion.jsx"
+import { MusicHappyQuestion } from "./components/MusicHappyQuestion.jsx";
+import { GenreQuestion } from "./components/GenreQuestion.jsx";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      <MoodQuestion />
+      <MusicHappyQuestion />
+      <GenreQuestion />
+    </>
+  );
 };
