@@ -11,7 +11,7 @@ export const ComfortFood = ({ value, updateFormData }) => {
 
   return (
     <div className="border-box">
-      <label>Your Comfort Food:</label>
+      <label>What is your comfort food?</label>
       <input type="text" value={value} onChange={handleComfortFoodChange} />
     </div>
   )
