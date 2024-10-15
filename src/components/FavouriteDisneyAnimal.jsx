@@ -21,12 +21,13 @@ export const FavouriteDisneyAnimal = () => {
           value={favourite}
         >
           <option value="">Select a Disney Animal</option>
-          <option value="simba">Simba-Lion in The Lion King</option>
-          <option value="lady-tramp">Lady and the Tramp-Dogs</option>
-          <option value="nemo">Nemo-Clownfish in Finding Nemo</option>
-          <option value="aristocats">Thomas O' Malley-Cat in Aristocats</option>
-          <option value="mickey">Mickey Mouse- Famous Disney Mouse</option>
-          <option value="chip-dale">Chip 'n' Dale - Chipmunks </option>
+          <option value="simba">Simba – Lion (The Lion King)</option>
+          <option value="lady-tramp">Lady & Tramp – Dogs (Lady and the Tramp)</option>
+          <option value="nemo">Nemo – Clownfish (Finding Nemo)</option>
+          <option value="aristocats">Thomas O'Malley – Cat (The Aristocats)</option>
+          <option value="mickey">Mickey Mouse – Iconic Disney Character</option>
+          <option value="chip-dale">Chip 'n' Dale – Chipmunks (Rescue Rangers)</option>
+
         </select>
       </form>
     </div>
