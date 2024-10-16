@@ -8,17 +8,19 @@ import { MusicHappyQuestion } from "./components/MusicHappyQuestion.jsx";
 import { GenreQuestion } from "./components/GenreQuestion.jsx";
 
 // Imports from johanna-branch
-import FoodHappy from './components/FoodHappy'
-import Breakfast from './components/FavoriteBreakfast'
-import ComfortFood from './components/ComfortFood'
+import FoodHappyQuestion from './components/FoodHappyQuestion'
+import BreakfastQuestion from './components/BreakfastQuestion'
+import ComfortFoodQuestion from './components/ComfortFoodQuestion'
 
+/* Empty strings in the form */
 const App = () => {
   const [formData, setFormData] = useState({
     foodHappy: "",
     favoriteBreakfast: "",
     comfortFood: ""
   })
-
+  
+/* Hold the data for the user's response to update the formData object */ 
   const updateFormData = (field, value) => {
     setFormData({
       ...formData,
@@ -33,24 +35,13 @@ const App = () => {
       <GenreQuestion />
     
       <h2>4.</h2>
-      <FoodHappy updateFormData={updateFormData} value={formData.foodHappy} />
+      <FoodHappyQuestion updateFormData={updateFormData} value={formData.foodHappy} />
       <h2>5.</h2>
-      <Breakfast updateFormData={updateFormData} value={formData.favoriteBreakfast} />
+      <BreakfastQuestion updateFormData={updateFormData} value={formData.favoriteBreakfast} />
       <h2>6.</h2>
-      <ComfortFood updateFormData={updateFormData} value={formData.comfortFood} />
+      <ComfortFoodQuestion updateFormData={updateFormData} value={formData.comfortFood} />
     </div>
   )
 }
 
 export default App
-
-
-export const App = () => {
-  return (
-    <>
-      <MoodQuestion />
-      <MusicHappyQuestion />
-      <GenreQuestion />
-    </>
-  )
-}
