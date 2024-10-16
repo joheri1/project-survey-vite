@@ -1,6 +1,13 @@
 /* eslint-disable react/prop-types */
 
 import { useState } from 'react'
+
+// Imports from main branch
+import { MoodQuestion } from "./components/MoodQuestion.jsx"
+import { MusicHappyQuestion } from "./components/MusicHappyQuestion.jsx";
+import { GenreQuestion } from "./components/GenreQuestion.jsx";
+
+// Imports from johanna-branch
 import FoodHappy from './components/FoodHappy'
 import Breakfast from './components/FavoriteBreakfast'
 import ComfortFood from './components/ComfortFood'
@@ -21,6 +28,10 @@ const App = () => {
 
   return (
     <div>
+      <MoodQuestion />
+      <MusicHappyQuestion />
+      <GenreQuestion />
+
       <h2>4.</h2>
       <FoodHappy updateFormData={updateFormData} value={formData.foodHappy} />
       <h2>5.</h2>
@@ -32,3 +43,4 @@ const App = () => {
 }
 
 export default App
+

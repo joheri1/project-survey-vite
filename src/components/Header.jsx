@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 // Header.jsx
 import React from 'react'
 import './Header.css'
