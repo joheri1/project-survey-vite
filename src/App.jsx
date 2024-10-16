@@ -1,13 +1,9 @@
-import { AnimalsHappy } from "./components/AnimalsHappy.jsx"
-import { FavouriteAnimal } from "./components/FavouriteAnimal.jsx"
-import { FavouriteDisneyAnimal } from "./components/FavouriteDisneyAnimal.jsx"
+import { MultiStepForm } from "./components/Multistepform.jsx";
 
 export const App = () => {
   return (
     <>
-      <AnimalsHappy />
-      <FavouriteAnimal />
-      <FavouriteDisneyAnimal />
+      <MultiStepForm />
     </>
   );
 };

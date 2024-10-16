@@ -1,12 +1,10 @@
+/* eslint-disable react/prop-types */
 // Does animals make you happy - radio buttons
 
-import { useState } from "react"
 
-const alternatives = ["Yes", "No"]
+const alternatives = ["Yes", "No"];
 
-export const AnimalsHappy = () => {
-  const [selectedAlternative, setSelectedAlternative] = useState("")
-
+export const AnimalsHappy = ({ value, updateFormData }) => {
   return (
     <form>
       <p>Does animals make you happy?</p>
@@ -15,15 +13,14 @@ export const AnimalsHappy = () => {
           <input
             type="radio"
             value={alternative}
-            onChange={(event) => setSelectedAlternative(event.target.value)}
-            checked={selectedAlternative === alternative}
+            onChange={(event) => updateFormData("animalsHappy", event.target.value)}
+            checked={value === alternative} // Use the value passed from parent
           />
           {alternative}
         </label>
       ))}
-
     </form>
-  )
-}
+  );
+};
 
 
