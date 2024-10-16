@@ -6,6 +6,8 @@
 
 export const ComfortFood = ({ value, updateFormData }) => {
   const handleComfortFoodChange = (e) => {
+    // 'e' is the event object. 'e.target' refers to the input element that triggered the event.
+    // 'e.target.value' gets the current value of the input field.
     updateFormData("comfortFood", e.target.value);
   }
 

@@ -6,6 +6,8 @@
  * This component is used to collect and update if food makes the user happy in a multi-step form.
  */
 
+import { useState } from 'react'
+
 const FoodHappy = ({ updateFormData, value }) => {
     const foodHappyOptions = [
         "Yes",

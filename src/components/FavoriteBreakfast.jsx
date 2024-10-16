@@ -11,7 +11,7 @@ export const Breakfast = ({ updateFormData, value }) => {
 
   return (
     <div className="border-box">
-      <label>What option would most likely be your go-to breakfast?</label>
+      <label>What option would most likely be is your go-to breakfast?</label>
       <select value={value} onChange={handleFavoriteBreakfastChange}>
         <option>Select a breakfast</option>
         <option value="smoothie-bowl">Smoothie bowl</option>
