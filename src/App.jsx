@@ -15,11 +15,12 @@ import ComfortFoodQuestion from './components/ComfortFoodQuestion'
 /* Empty strings in the form */
 const App = () => {
   const [formData, setFormData] = useState({
+    
     foodHappy: "",
     favoriteBreakfast: "",
     comfortFood: ""
   })
-  
+
 /* Hold the data for the user's response to update the formData object */ 
   const updateFormData = (field, value) => {
     setFormData({
@@ -33,7 +34,6 @@ const App = () => {
       <MoodQuestion />
       <MusicHappyQuestion />
       <GenreQuestion />
-    
       <h2>4.</h2>
       <FoodHappyQuestion updateFormData={updateFormData} value={formData.foodHappy} />
       <h2>5.</h2>
