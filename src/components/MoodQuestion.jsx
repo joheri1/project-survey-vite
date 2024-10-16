@@ -5,14 +5,17 @@ export const MoodQuestion = () => {
 
   return (
     <div>
-      <h1>1</h1>
-      <p>What´s your favourite mood boosting activity?</p>
-      <input
-        type="text"
-        onChange={(event) => setMood(event.target.value)}
-        value={mood}
-      />
-      {/* <p>{mood}</p> */}
+      <div className="question-container">
+        <h1>1</h1>
+        <p>What's your favorite mood-boosting song?</p>
+      </div>
+      <div className="answer-container">
+        <input
+          type="text"
+          onChange={(event) => setMood(event.target.value)}
+          value={mood}
+        />
+      </div>
     </div>
   );
 };

@@ -6,21 +6,26 @@ export const GenreQuestion = () => {
 
   return (
     <div>
-      <h1>3</h1>
-      <p>Whats your favourite music genre?</p>
-      <form>
-        <select
-          onChange={event => setGenre(event.target.value)}
-          value={genre}
-        >
-          <option value="">Select genre</option>
-          <option value="Rock">Rock</option>
-          <option value="Pop">Pop</option>
-          <option value="House">House</option>
-          <option value="R&B">R&B</option>
-          <option value="Indie">Indie</option>
-        </select>
-      </form>
+      <div className="question-container">
+        <h1>3</h1>
+        <p>Whats your favourite music genre?</p>
+      </div>
+      <div className="answer-container">
+        <form>
+          <select
+            onChange={event => setGenre(event.target.value)}
+            value={genre}
+          >
+            <option value="">Select genre</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="House">House</option>
+            <option value="R&B">R&B</option>
+            <option value="Indie">Indie</option>
+          </select>
+        </form>
+      </div>
+
     </div>
   );
 };

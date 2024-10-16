@@ -1,13 +1,12 @@
-import { MoodQuestion } from "./components/MoodQuestion.jsx"
-import { MusicHappyQuestion } from "./components/MusicHappyQuestion.jsx";
-import { GenreQuestion } from "./components/GenreQuestion.jsx";
+import { MultiFormData } from "./components/MultiFormData.jsx";
+import "./components/App.css"
 
 export const App = () => {
   return (
     <>
-      <MoodQuestion />
-      <MusicHappyQuestion />
-      <GenreQuestion />
+      <div className="form-container">
+        <MultiFormData />
+      </div>
     </>
   );
 };
