@@ -31,7 +31,7 @@ const App = () => {
       <MoodQuestion />
       <MusicHappyQuestion />
       <GenreQuestion />
-
+    
       <h2>4.</h2>
       <FoodHappy updateFormData={updateFormData} value={formData.foodHappy} />
       <h2>5.</h2>
@@ -44,3 +44,13 @@ const App = () => {
 
 export default App
 
+
+export const App = () => {
+  return (
+    <>
+      <MoodQuestion />
+      <MusicHappyQuestion />
+      <GenreQuestion />
+    </>
+  )
+}
