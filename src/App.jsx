@@ -5,9 +5,11 @@ import { MultiStepForm } from "./components/Multistepform.jsx";
 export const App = () => {
   return (
     <>
-      <div className="form-container">
-        {/* <Header /> */}
-        <MultiStepForm />
+      <div className="main-box">
+        <div className="form-container">
+          {/* <Header /> */}
+          <MultiStepForm />
+        </div>
       </div>
     </>
   );
