@@ -10,10 +10,15 @@ export const FavouriteAnimal = ({ updateFormData, value }) => {
   }
 
   return (
-    <div className="border-box">
-      <p>Favorite Animal:</p>
-      <input type="text" value={value} onChange={handleFavouriteAnimalChange} />
-    </div>
+    <>
+      <div className="question-container">
+        <h1>8</h1>
+        <p>What is your favorite animal?</p>
+      </div>
+      <div className="answer-container">
+        <input type="text" value={value} onChange={handleFavouriteAnimalChange} />
+      </div>
+    </>
   );
 };
 

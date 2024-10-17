@@ -1,8 +1,7 @@
-// Header.jsx
-import React from 'react'
+
 import './Header.css'
 
-const Header = () => {
+export const Header = () => {
   return (
     <div className="header">
       <div className="header-text">
@@ -10,7 +9,10 @@ const Header = () => {
         <h2>Everyday Joy Boosters Survey</h2>
       </div>
     </div>
+    /* // <div className="start-button">
+    // <button onClick={nextStep}>Let´s go!</button>
+    // </div> */
+
   )
 }
 
-export default Header
