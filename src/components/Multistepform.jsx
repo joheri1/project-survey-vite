@@ -129,7 +129,7 @@ export const MultiStepForm = () => {
   };
 
   return (
-    <>
+    <div className="multi-step-form">
       {formSubmitted ? (
         <h2>Thanks for Voting!</h2>
       ) : (
@@ -191,7 +191,7 @@ export const MultiStepForm = () => {
           <button onClick={startOver}>Start Over</button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
