@@ -1,8 +1,7 @@
-// Header.jsx
-import React from 'react'
+
 import './Header.css'
 
-const Header = () => {
+export const Header = () => {
   return (
     <div className="header">
       <div className="header-text">
@@ -13,4 +12,3 @@ const Header = () => {
   )
 }
 
-export default Header
