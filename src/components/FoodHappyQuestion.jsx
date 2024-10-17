@@ -29,7 +29,7 @@ export const FoodHappyQuestion = ({ value, updateFormData }) => {
                                 checked={value === option}
                             /*Check if the option is selected*/
                             />
-                            {option === 'Yes' ? 'No' : 'Sometimes'}
+                            {option === 'Yes' ? 'Yes' : option === 'No' ? 'No' : 'Sometimes'}
                         </label>
                     ))}
                 </form>
