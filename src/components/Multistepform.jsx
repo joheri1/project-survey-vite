@@ -59,16 +59,16 @@ export const MultiStepForm = () => {
     if (currentStep > 1) setCurrentStep(currentStep - 1);
   };
 
-  // Function to submit the form
+  // Function to submit the form 
   const submitForm = () => {
     console.log(formData);
     setFormSubmitted(true);
 
 
     const formattedData = `
-      Does Animals make you happy: ${formData.animalsHappy}
-      Favorite Animal: ${formData.favouriteAnimal}
-      Favorite Disney Animal: ${formData.favouriteDisneyAnimal}
+      Does Animals make you happy: ${formData.animalsHappy} // Inserts the value of animalsHappy from formData.
+      Favorite Animal: ${formData.favouriteAnimal} //Inserts the value of favouriteAnimal from formData.
+      Favorite Disney Animal: ${formData.favouriteDisneyAnimal} //Inserts the value of favouriteDisneyAnimal from formData.
     `;
     alert(formattedData);
   };
