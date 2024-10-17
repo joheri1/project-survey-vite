@@ -1,24 +1,15 @@
 AnnaBranch
 import { MultiStepForm } from "./components/Multistepform.jsx";
+import { MultiFormData } from "./components/MultiFormData.jsx";
 
 export const App = () => {
   return (
     <>
-      <MultiStepForm />
+      <div className="form-container">
+        <MultiStepForm />
+        <MultiFormData />
+      </div>
     </>
   );
 };
 
-import { MultiFormData } from "./components/MultiFormData.jsx";
-import "./components/App.css"
-
-
-
-<>
-  <div className="form-container">
-    <MultiFormData />
-  </div>
-</>
-  );
-};
-main
