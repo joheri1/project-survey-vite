@@ -12,16 +12,6 @@ export const App = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <>
-      <div className="main-box">
-        <div className="form-container">
-          {/* <Header /> */}
-          <MultiStepForm />
-        </div>
-      </div>
-    </>
-=======
     <div className="form-container">
       {hasStarted ? (
         <MultiStepForm />
@@ -29,8 +19,6 @@ export const App = () => {
         <StartPage onStart={startForm} />
       )}
     </div>
->>>>>>> dc62f59e80f91773713873ff5bea99c625e84791
   );
 };
 
-//commit-test
