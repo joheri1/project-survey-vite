@@ -1,3 +1,14 @@
+AnnaBranch
+import { MultiStepForm } from "./components/Multistepform.jsx";
+
+export const App = () => {
+  return (
+    <>
+      <MultiStepForm />
+    </>
+  );
+};
+
 import { MultiFormData } from "./components/MultiFormData.jsx";
 import "./components/App.css"
 
@@ -10,3 +21,4 @@ import "./components/App.css"
 </>
   );
 };
+main
