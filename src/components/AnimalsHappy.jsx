@@ -15,21 +15,26 @@ export const AnimalsHappy = ({ value, updateFormData }) => {
     // Step 3: Create a form element.
     <form>
       {/* Step 4: Display a question inside a paragraph element */}
-      <p>Does animals make you happy?</p>
+      <div className="question-container">
+        <h1>7</h1>
+        <p>Does animals make you happy?</p>
+      </div>
       {/* Step 5: Loop through the "alternatives" array (Yes/No) to create a radio button for each option */}
-      {alternatives.map((alternative) => (
-        // Step 6: For each alternative, create a label and a corresponding radio input field.
-        // The "key" attribute is required in React when rendering multiple elements in a loop.
-        <label key={alternative}>
-          <input
-            type="radio" //This makes it a radio button.
-            value={alternative} //The value of the radio button will be either "Yes" or "No".
-            onChange={(event) => updateFormData("animalsHappy", event.target.value)} //This function triggers when the user selects a radio button. updateFormData("animalsHappy", event.target.value)}
-            checked={value === alternative} // Use the value passed from parent
-          />
-          {alternative}
-        </label>
-      ))}
+      <div className="answer-container">
+        {alternatives.map((alternative) => (
+          // Step 6: For each alternative, create a label and a corresponding radio input field.
+          // The "key" attribute is required in React when rendering multiple elements in a loop.
+          <label key={alternative}>
+            <input
+              type="radio" //This makes it a radio button.
+              value={alternative} //The value of the radio button will be either "Yes" or "No".
+              onChange={(event) => updateFormData("animalsHappy", event.target.value)} //This function triggers when the user selects a radio button. updateFormData("animalsHappy", event.target.value)}
+              checked={value === alternative} // Use the value passed from parent
+            />
+            {alternative}
+          </label>
+        ))}
+      </div>
     </form>
   );
 };

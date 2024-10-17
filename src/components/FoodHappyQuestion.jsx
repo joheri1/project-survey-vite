@@ -1,43 +1,44 @@
 /* eslint-disable react/prop-types */
 
-// Does food make you happy? - radio buttons
-
 /**
  * This component is used to collect and update if food makes the user happy in a multi-step form. 
  */
 
-import { useState } from 'react'
-
-const foodHappyOptions = [
+const options = [
     "Yes",
     "No",
     "Sometimes"
 ]
 
-const App = () => {
-    const [foodHappy, setFoodHappy] = useState("") 
-    /* useState for tracking selected option */
+export const FoodHappyQuestion = ({ value, updateFormData }) => {
 
     return (
-        <form> 
-            <p>Does Food Make You Happy?</p>
-            {foodHappyOptions.map((option) => (
-                <label key={option}>
-                    <input
-                        type="radio"
-                        value={option}
-                        onChange={(event) => setFoodHappy(event.target.value)}
-                        checked={foodHappy === option} 
-                        /*Check if the option is selected*/
-                    />
-                    {option}
-                </label>
-            ))} 
-        </form>
-    )
-}
+        <div>
+            <div className="question-container">
+                <h1>4</h1>
+                <p>Does Food Make You Happy?</p>
+            </div>
+            <div className="answer-question">
+                <form>
+                    {options.map((option) => (
+                        <label key={option}>
+                            <input
+                                type="radio"
+                                value={option}
+                                onChange={(event) => updateFormData("foodHappyQuestion", event.target.value)}
+                                checked={value === option}
+                            /*Check if the option is selected*/
+                            />
+                            {option === 'Yes' ? 'No' : 'Sometimes'}
+                        </label>
+                    ))}
+                </form>
+            </div>
+        </div>
+    );
+};
 
-export default App
+/* eslint-disable react/prop-types */
 
 /**
  * Summary:

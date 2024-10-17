@@ -1,8 +1,9 @@
-// Whats your favourite music genre? - dropdown menu 3
-import { useState } from "react"
+/* eslint-disable react/prop-types */
 
-export const GenreQuestion = () => {
-  const [genre, setGenre] = useState("");
+export const GenreQuestion = ({ updateFormData, value }) => {
+  const handleGenreQuestionChange = (event) => {
+    updateFormData("genreQuestion", event.target.value);
+  };
 
   return (
     <div>
@@ -12,9 +13,8 @@ export const GenreQuestion = () => {
       </div>
       <div className="answer-container">
         <form>
-          <select
-            onChange={event => setGenre(event.target.value)}
-            value={genre}
+          <select value={value}
+            onChange={handleGenreQuestionChange}
           >
             <option value="">Select genre</option>
             <option value="Rock">Rock</option>

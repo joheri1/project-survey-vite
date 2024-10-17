@@ -5,19 +5,27 @@
  */
 
 export const ComfortFood = ({ value, updateFormData }) => {
-  const handleComfortFoodChange = (e) => {
-    // 'e' is the event object. 'e.target' refers to the input element that triggered the event.
-    // 'e.target.value' gets the current value of the input field.
-    updateFormData("comfortFood", e.target.value);
+  const handleComfortFoodChange = (event) => {
+
+    updateFormData("comfortFood", event.target.value);
   }
 
   return (
-    <div className="border-box">
-      <label>What is your comfort food?</label>
-      <input type="text" value={value} onChange={handleComfortFoodChange} />
+    <div>
+      <div className="question-container">
+        <h1>5</h1>
+        <p>What is your comfort food?</p>
+      </div>
+      <div className="answer-container">
+        <input
+          type="text"
+          value={value}
+          onChange={handleComfortFoodChange} />
+      </div>
+
     </div>
-  )
-}
+  );
+};
 
 export default ComfortFood
 

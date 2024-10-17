@@ -1,33 +1,31 @@
-//Does music make you happy? Radio button- YES absolutely, NO I like the silence" 2
+/* eslint-disable react/prop-types */
 
-import { useState } from "react";
+const options = ['yes', 'no']
 
-const options = [
-  'yes',
-  'no'
-]
-
-export const MusicHappyQuestion = () => {
-  const [isMusicHappy, setIsMusicHappy] = useState("");
-
+export const MusicHappyQuestion = ({ value, updateFormData }) => {
 
   return (
     <div>
-      <h1>2</h1>
-      <p>Does music make you happy?</p>
-      <form>
-        {options.map((option, index) => (
-          <label key={index}>
-            <input
-              type="radio"
-              value={option}
-              onChange={(event) => setIsMusicHappy(event.target.value)}
-              checked={isMusicHappy === option}
-            />
-            {option === 'yes' ? 'YES absolutely' : 'NO I like the silence'}
-          </label>
-        ))}
-      </form>
+      <div className="question-container">
+        <h1>2</h1>
+        <p>Does music make you happy?</p>
+      </div>
+      <div className="answer-container">
+        <form>
+          {options.map((option) => (
+            <label key={option}>
+              <input
+                type="radio"
+                value={option}
+                onChange={(event) => updateFormData("musicHappyQuestion", event.target.value)}
+                checked={value === option}
+              />
+              {option === 'yes' ? 'YES absolutely' : 'NO I like the silence'}
+            </label>
+          ))}
+        </form>
+      </div>
     </div>
   );
 };
+
