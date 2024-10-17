@@ -8,7 +8,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-family: ‘Poppins’, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-container {
@@ -29,14 +29,20 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
+    padding: 20px;
     min-height: 100vh;
 }
 
-.question-container {
-    background-color: #0018A4;
-    color: white;
-    font-size: 30px;
-    text-align: center;
+.question-container,
+.answer-container {
+    flex: 1;
+    /* 50/50 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .answer-container {

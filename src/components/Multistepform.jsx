@@ -164,7 +164,11 @@ export const MultiStepForm = () => {
           )}
 
           {/* Navigation buttons */}
+<<<<<<< HEAD
           <div className="answer-container">
+=======
+          <div className="button-container">
+>>>>>>> dc62f59e80f91773713873ff5bea99c625e84791
             {currentStep > 1 && <button onClick={prevStep}>Back</button>}
             {currentStep < 10 ? (
               <button onClick={nextStep}>Next</button>
