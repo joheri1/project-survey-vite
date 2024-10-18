@@ -24,7 +24,7 @@ export const AnimalsHappy = ({ value, updateFormData }) => {
         {alternatives.map((alternative) => (
           // Step 6: For each alternative, create a label and a corresponding radio input field.
           // The "key" attribute is required in React when rendering multiple elements in a loop.
-          <label key={alternative}>
+          <label key={alternative} className="radio-button"> 
             <input
               type="radio" //This makes it a radio button.
               value={alternative} //The value of the radio button will be either "Yes" or "No".
