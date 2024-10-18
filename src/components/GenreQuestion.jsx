@@ -8,7 +8,7 @@ export const GenreQuestion = ({ updateFormData, value }) => {
   return (
     <div>
       <div className="question-container">
-        <h1>3</h1>
+        <h1>3.</h1>
         <p>Whats your favourite music genre?</p>
       </div>
       <div className="answer-container">

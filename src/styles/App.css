@@ -147,14 +147,15 @@ body {
 }
 
 .radio-label input[type="radio"] {
-    opacity: 0; /* Hide radio button */
+    opacity: 0;
+    /* Hide radio button */
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
 
 /* Styling for radiobutton when selected */
-.radio-label input[type="radio"]:checked + span {
+.radio-label input[type="radio"]:checked+span {
     background-color: #9c9c9c;
     color: white;
     border: 1px solid #0018A4;
@@ -221,4 +222,8 @@ body {
     background-color: #0018A4;
     color: white;
     border-color: #0018A4;
+}
+
+p {
+    padding-left: 20px;
 }
