@@ -29,7 +29,7 @@ body {
     flex-direction: row;
     width: 100vw;
     height: 100vh;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     /* For troubleshooting */
     gap: 0;
 }

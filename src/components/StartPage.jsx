@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-
+import "../styles/StartPage.css"
 
 export const StartPage = ({ onStart }) => {
   return (
-    <><div className="startpage">
+    <><div className="start-page">
       <div className="header">
         <h1>The Science of Happiness</h1>
         <h2>Everyday Joy Boosters Survey</h2>
