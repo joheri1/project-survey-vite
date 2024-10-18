@@ -178,8 +178,8 @@ export const MultiStepForm = () => {
       {/* Display form data after submission */}
       {formSubmitted && (
         <div className="submitted-form-container">
-          <h1>Thanks for your answers!</h1>
-          <h2>Results:</h2>
+          <h1>Thank you for your answers!</h1>
+          <h2>Here is a summary:</h2>
           <p>What is your go-to mood boosting song? {formData.moodQuestion}</p>
           <p>Does music make you happy? {formData.musicHappyQuestion}</p>
           <p>What is your favourite music genre? {formData.genreQuestion}</p>
