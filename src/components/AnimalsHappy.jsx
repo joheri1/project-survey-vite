@@ -16,7 +16,7 @@ export const AnimalsHappy = ({ value, updateFormData }) => {
     <form>
       {/* Step 4: Display a question inside a paragraph element */}
       <div className="question-container">
-        <h1>7</h1>
+        <h1>7.</h1>
         <p>Does animals make you happy?</p>
       </div>
       {/* Step 5: Loop through the "alternatives" array (Yes/No) to create a radio button for each option */}

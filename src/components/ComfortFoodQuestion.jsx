@@ -13,7 +13,7 @@ export const ComfortFood = ({ value, updateFormData }) => {
   return (
     <div>
       <div className="question-container">
-        <h1>5</h1>
+        <h1>5.</h1>
         <p>What is your comfort food?</p>
       </div>
       <div className="answer-container">

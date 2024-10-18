@@ -12,7 +12,7 @@ export const Breakfast = ({ updateFormData, value }) => {
   return (
     <div>
       <div className="question-container">
-        <h1>6</h1>
+        <h1>6.</h1>
         <p>What option would most likely be your go-to breakfast?</p>
       </div>
       <div className="answer-container">

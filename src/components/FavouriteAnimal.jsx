@@ -12,7 +12,7 @@ export const FavouriteAnimal = ({ updateFormData, value }) => {
   return (
     <>
       <div className="question-container">
-        <h1>8</h1>
+        <h1>8.</h1>
         <p>What is your favorite animal?</p>
       </div>
       <div className="answer-container">

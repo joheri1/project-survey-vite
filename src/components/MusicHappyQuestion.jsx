@@ -7,7 +7,7 @@ export const MusicHappyQuestion = ({ value, updateFormData }) => {
   return (
     <div>
       <div className="question-container">
-        <h1>2</h1>
+        <h1>2.</h1>
         <p>Does music make you happy?</p>
       </div>
       <div className="answer-container">

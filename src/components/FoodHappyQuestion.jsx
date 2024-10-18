@@ -15,10 +15,10 @@ export const FoodHappyQuestion = ({ value, updateFormData }) => {
     return (
         <div>
             <div className="question-container">
-                <h1>4</h1>
+                <h1>4.</h1>
                 <p>Does Food Make You Happy?</p>
             </div>
-            <div className="answer-question">
+            <div className="answer-container">
                 <form>
                     {options.map((option) => (
                         <label key={option}>
