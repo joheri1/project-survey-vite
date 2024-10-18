@@ -13,16 +13,18 @@ export const GenreQuestion = ({ updateFormData, value }) => {
       </div>
       <div className="answer-container">
         <form>
-          <select value={value}
-            onChange={handleGenreQuestionChange}
-          >
-            <option value="">Select genre</option>
-            <option value="Rock">Rock</option>
-            <option value="Pop">Pop</option>
-            <option value="House">House</option>
-            <option value="R&B">R&B</option>
-            <option value="Indie">Indie</option>
-          </select>
+          <div className="answer-container-dropdown">
+            <select value={value}
+              onChange={handleGenreQuestionChange}
+            >
+              <option value="">Select </option>
+              <option value="Rock">Rock</option>
+              <option value="Pop">Pop</option>
+              <option value="House">House</option>
+              <option value="R&B">R&B</option>
+              <option value="Indie">Indie</option>
+            </select>
+          </div>
         </form>
       </div>
 

@@ -17,14 +17,16 @@ export const Breakfast = ({ updateFormData, value }) => {
       </div>
       <div className="answer-container">
         <form>
-          <select value={value} onChange={handleBreakfastChange}>
-            <option>Select a breakfast</option>
-            <option value="smoothie-bowl">Smoothie bowl</option>
-            <option value="overnight-oats">Overnight oats</option>
-            <option value="scrambled-eggs">Scrambled eggs</option>
-            <option value="croissant-banana">Croissant and a banana</option>
-            <option value="yoghurt-berries">Greek yoghurt with berries</option>
-          </select>
+          <div className="answer-container-dropdown">
+            <select value={value} onChange={handleBreakfastChange}>
+              <option>Select </option>
+              <option value="smoothie-bowl">Smoothie bowl</option>
+              <option value="overnight-oats">Overnight oats</option>
+              <option value="scrambled-eggs">Scrambled eggs</option>
+              <option value="croissant-banana">Croissant and a banana</option>
+              <option value="yoghurt-berries">Greek yoghurt with berries</option>
+            </select>
+          </div>
         </form>
       </div>
     </div>

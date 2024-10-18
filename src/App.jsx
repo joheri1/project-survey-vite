@@ -12,13 +12,16 @@ export const App = () => {
   };
 
   return (
-    <div className="form-container">
-      {hasStarted ? (
-        <MultiStepForm />
-      ) : (
-        <StartPage onStart={startForm} />
-      )}
-    </div>
+    <>
+      <div className="form-container">
+        {hasStarted ? (
+          <MultiStepForm />
+        ) : (
+          <StartPage onStart={startForm} />
+        )}
+      </div>
+    </>
   );
 };
+
 
