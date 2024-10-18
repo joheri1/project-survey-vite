@@ -184,6 +184,11 @@ body {
     font-weight: bold;
 }
 
+.answer {
+    font-weight: normal;
+    color: white;
+}
+
 .submitted-form-container button {
     width: 200px;
     padding: 10px;

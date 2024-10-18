@@ -180,15 +180,15 @@ export const MultiStepForm = () => {
         <div className="submitted-form-container">
           <h1>Thank you for your answers!</h1>
           <h2>Here is a summary:</h2>
-          <p>What is your go-to mood boosting song? {formData.moodQuestion}</p>
-          <p>Does music make you happy? {formData.musicHappyQuestion}</p>
-          <p>What is your favourite music genre? {formData.genreQuestion}</p>
-          <p>What is your comfort-food? {formData.comfortFood}</p>
-          <p>Does food make you happy? {formData.foodHappyQuestion}</p>
-          <p>What option would most likely be your go-to breakfast? {formData.breakfast}</p>
-          <p>Does animals make you happy?: {formData.animalsHappy}</p>
-          <p>Favorite Animal: {formData.favouriteAnimal}</p>
-          <p>Favorite Disney Animal: {formData.favouriteDisneyAnimal}</p>
+          <p>What is your go-to mood boosting song? <span className="answer">{formData.moodQuestion}</span></p>
+          <p>Does music make you happy? <span className="answer">{formData.musicHappyQuestion}</span></p>
+          <p>What is your favourite music genre? <span className="answer">{formData.genreQuestion}</span></p>
+          <p>What is your comfort-food? <span className="answer">{formData.comfortFood}</span></p>
+          <p>Does food make you happy? <span className="answer">{formData.foodHappyQuestion}</span></p>
+          <p>What option would most likely be your go-to breakfast? <span className="answer">{formData.breakfast}</span></p>
+          <p>Does animals make you happy?: <span className="answer">{formData.animalsHappy}</span></p>
+          <p>Favorite Animal: <span className="answer">{formData.favouriteAnimal}</span></p>
+          <p>Favorite Disney Animal: <span className="answer">{formData.favouriteDisneyAnimal}</span></p>
           <button onClick={startOver}>Start Over</button>
         </div>
       )}
