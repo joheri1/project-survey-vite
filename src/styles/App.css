@@ -81,8 +81,8 @@ body {
 }
 
 .answer-container-dropdown select {
-    width: 300px;
-    padding: 10px;
+    width: 350px;
+    padding: 11px;
     font-size: 16px;
     border: 1px solid black;
     border-radius: 5px;
@@ -112,8 +112,8 @@ body {
 }
 
 .answer-container input {
-    width: fixed 500px;
-    height: fixed 10px;
+    width: 350px;
+    height: 45px;
     top: 460px;
     left: 840px;
     border-radius: 6px;
