@@ -13,7 +13,7 @@ export const MusicHappyQuestion = ({ value, updateFormData }) => {
       <div className="answer-container">
         <form>
           {options.map((option) => (
-            <label key={option}>
+            <label key={option} className="radio-button"> 
               <input
                 type="radio"
                 value={option}
