@@ -18,7 +18,7 @@ export const FavouriteDisneyAnimal = ({ updateFormData, value }) => {
     <>
       <div className="question-container">
         <h1>9.</h1>
-        <p>Favorite Disney Animal:</p>
+        <p>Favorite Disney Animal</p>
       </div>
       <div className="answer-container">
         <form>

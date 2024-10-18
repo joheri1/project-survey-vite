@@ -186,7 +186,7 @@ export const MultiStepForm = () => {
           <p>What is your comfort-food? <span className="answer">{formData.comfortFood}</span></p>
           <p>Does food make you happy? <span className="answer">{formData.foodHappyQuestion}</span></p>
           <p>What option would most likely be your go-to breakfast? <span className="answer">{formData.breakfast}</span></p>
-          <p>Does animals make you happy?: <span className="answer">{formData.animalsHappy}</span></p>
+          <p>Does animals make you happy? <span className="answer">{formData.animalsHappy}</span></p>
           <p>Favorite Animal: <span className="answer">{formData.favouriteAnimal}</span></p>
           <p>Favorite Disney Animal: <span className="answer">{formData.favouriteDisneyAnimal}</span></p>
           <button onClick={startOver}>Start Over</button>
