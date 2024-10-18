@@ -21,7 +21,7 @@ export const FoodHappyQuestion = ({ value, updateFormData }) => {
             <div className="answer-container">
                 <form>
                     {options.map((option) => (
-                        <label key={option} className="radio-button"> 
+                        <label key={option} className="radio-label"> 
                             <input
                                 type="radio"
                                 value={option}
@@ -29,7 +29,8 @@ export const FoodHappyQuestion = ({ value, updateFormData }) => {
                                 checked={value === option}
                             /*Check if the option is selected*/
                             />
-                            {option === 'Yes' ? 'Yes' : option === 'No' ? 'No' : 'Sometimes'}
+                            <span>{option === 'Yes' ? 'Yes' : option === 'No' ? 'No' : 'Sometimes'}
+                            </span>
                         </label>
                     ))}
                 </form>

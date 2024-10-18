@@ -13,14 +13,15 @@ export const MusicHappyQuestion = ({ value, updateFormData }) => {
       <div className="answer-container">
         <form>
           {options.map((option) => (
-            <label key={option} className="radio-button"> 
+            <label key={option} className="radio-label"> 
               <input
                 type="radio"
                 value={option}
                 onChange={(event) => updateFormData("musicHappyQuestion", event.target.value)}
                 checked={value === option}
               />
-              {option === 'yes' ? 'YES absolutely' : 'NO I like the silence'}
+              <span>{option === 'yes' ? 'YES absolutely' : 'NO I like the silence'}
+                </span>
             </label>
           ))}
         </form>
