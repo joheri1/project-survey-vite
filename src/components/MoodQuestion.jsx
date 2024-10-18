@@ -9,8 +9,7 @@ export const MoodQuestion = ({ updateFormData, value }) => {
   return (
     <div>
       <div className="question-container">
-        <h1>1.
-        </h1>
+        <h1>1.</h1>
         <p>What is your favorite mood-boosting song?</p>
       </div>
       <div className="answer-container">
