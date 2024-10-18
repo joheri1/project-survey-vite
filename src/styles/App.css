@@ -47,11 +47,11 @@ body {
 .question-container {
     background-color: #0018A4;
     color: white;
-    /*position: absolute;
+    position: absolute;
     top: 0;
     right: 50%;
     left: 0;
-    bottom: 0;*/
+    bottom: 0;
 }
 
 .question-container h1 {
@@ -74,10 +74,10 @@ body {
     font-size: 20px;
     line-height: 30px;
     position: absolute;
-    /*top: 0;
+    top: 0;
     right: 0;
     left: 50%;
-    bottom: 0;*/
+    bottom: 0;
 }
 
 .answer-container-dropdown select {
