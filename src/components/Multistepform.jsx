@@ -163,15 +163,15 @@ export const MultiStepForm = () => {
             <FavouriteDisneyAnimal value={formData.favouriteDisneyAnimal} updateFormData={updateFormData} />
           )}
 
-          {/* Navigation buttons */}
-          <div className="button-container">
+            {/* Navigation buttons */}
+            <div className="button-container">
             {currentStep > 1 && <button onClick={prevStep}>Back</button>}
             {currentStep < 10 ? (
               <button onClick={nextStep}>Next</button>
             ) : (
               <button onClick={submitForm}>Submit Form</button>
-            )}
-          </div>
+              )}
+              </div>
         </>
       )}
 

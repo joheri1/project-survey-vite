@@ -19,6 +19,7 @@ export const ComfortFood = ({ value, updateFormData }) => {
       <div className="answer-container">
         <input
           type="text"
+          placeholder="Write your answer here..."
           value={value}
           onChange={handleComfortFoodChange} />
       </div>

@@ -16,7 +16,11 @@ export const FavouriteAnimal = ({ updateFormData, value }) => {
         <p>What is your favorite animal?</p>
       </div>
       <div className="answer-container">
-        <input type="text" value={value} onChange={handleFavouriteAnimalChange} />
+        <input
+          type="text"
+          placeholder="Write your answer here..."
+          value={value}
+          onChange={handleFavouriteAnimalChange} />
       </div>
     </>
   );
