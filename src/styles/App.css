@@ -150,3 +150,36 @@ body {
     min-height: 44px;
     min-width: 44px;
 }
+
+.submitted-form-container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.submitted-form-container button {
+    width: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.submitted-form-container button:hover {
+    background-color: #0018A4;
+    color: white;
+    border-color: #0018A4;
+}

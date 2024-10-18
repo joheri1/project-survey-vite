@@ -131,7 +131,7 @@ export const MultiStepForm = () => {
   return (
     <div className="multi-step-form">
       {formSubmitted ? (
-        <h2>Thanks for Voting!</h2>
+        <></>
       ) : (
         <>
           {/* Render components based on the current step */}
@@ -163,22 +163,23 @@ export const MultiStepForm = () => {
             <FavouriteDisneyAnimal value={formData.favouriteDisneyAnimal} updateFormData={updateFormData} />
           )}
 
-            {/* Navigation buttons */}
-            <div className="button-container">
+          {/* Navigation buttons */}
+          <div className="button-container">
             {currentStep > 1 && <button onClick={prevStep}>Back</button>}
             {currentStep < 10 ? (
               <button onClick={nextStep}>Next</button>
             ) : (
               <button onClick={submitForm}>Submit Form</button>
-              )}
-              </div>
+            )}
+          </div>
         </>
       )}
 
       {/* Display form data after submission */}
       {formSubmitted && (
-        <div className="">
-          <h3>Voting Information</h3>
+        <div className="submitted-form-container">
+          <h1>Thanks for your answers!</h1>
+          <h2>Results:</h2>
           <p>What is your go-to mood boosting song? {formData.moodQuestion}</p>
           <p>Does music make you happy? {formData.musicHappyQuestion}</p>
           <p>What is your favourite music genre? {formData.genreQuestion}</p>
