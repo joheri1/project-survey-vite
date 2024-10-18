@@ -97,10 +97,6 @@ body {
     cursor: pointer;
 }
 
-.answer-container button:hover {
-    background-color: #bbb; /* Förbättrad hover-effekt */
-}
-
 .button-container {
     display: flex;
     justify-content: space-around;
