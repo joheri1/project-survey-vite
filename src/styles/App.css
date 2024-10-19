@@ -21,7 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #0018A4;
-    /*For troubleshooting*/
 }
 
 .form-container {
@@ -232,7 +231,7 @@ body {
 }
 
 .answer {
-    font-weight: lighter;
+    font-weight: 100;
     color: white;
     margin-left: 5px;
 }
