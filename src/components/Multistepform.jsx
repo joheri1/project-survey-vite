@@ -38,7 +38,7 @@ export const MultiStepForm = () => {
 
   // Function to move to the next step
   const nextStep = () => {
-    if (currentStep < 10) {
+    if (currentStep < 9) {
       switch (currentStep) {
         case 1:
           if (formData.moodQuestion) {
@@ -128,8 +128,20 @@ export const MultiStepForm = () => {
     setCurrentStep(1);
   };
 
+  // Handle Enter keypress
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      if (currentStep < 9) {
+        nextStep(); // Move to next step
+      } else {
+        submitForm(); // Submit the form if it's the last step
+      }
+    }
+  };
+
   return (
-    <div className="multi-step-form">
+    <div className="multi-step-form" onKeyDown={handleKeyPress} tabIndex="0">
       {formSubmitted ? (
         <></>
       ) : (
@@ -166,7 +178,7 @@ export const MultiStepForm = () => {
           {/* Navigation buttons */}
           <div className="button-container">
             {currentStep > 1 && <button className="back-button" onClick={prevStep}>Back</button>}
-            {currentStep < 10 ? (
+            {currentStep < 9 ? (
               <button className="next-button" onClick={nextStep}>Next</button>
             ) : (
               <button onClick={submitForm}>Submit Form</button>
@@ -178,18 +190,18 @@ export const MultiStepForm = () => {
       {/* Display form data after submission */}
       {formSubmitted && (
         <div className="submitted-form-container">
-          <h1>Thank you for your answers!</h1>
-          <h2>Here is a summary:</h2>
-          <p>What is your go-to mood boosting song? <span className="answer">{formData.moodQuestion}</span></p>
-          <p>Does music make you happy? <span className="answer">{formData.musicHappyQuestion}</span></p>
-          <p>What is your favourite music genre? <span className="answer">{formData.genreQuestion}</span></p>
-          <p>What is your comfort-food? <span className="answer">{formData.comfortFood}</span></p>
-          <p>Does food make you happy? <span className="answer">{formData.foodHappyQuestion}</span></p>
-          <p>What option would most likely be your go-to breakfast? <span className="answer">{formData.breakfast}</span></p>
-          <p>Does animals make you happy? <span className="answer">{formData.animalsHappy}</span></p>
-          <p>Favorite Animal: <span className="answer">{formData.favouriteAnimal}</span></p>
-          <p>Favorite Disney Animal: <span className="answer">{formData.favouriteDisneyAnimal}</span></p>
-          <button onClick={startOver}>Start Over</button>
+          <h1><span className="thanks">Thank you for your answers!</span></h1>
+          <h2><span className="summary">Here is a summary:</span></h2>
+          <p><span className="question">What is your go-to mood boosting song?</span><span className="answer">{formData.moodQuestion}</span></p>
+          <p><span className="question">Does music make you happy?</span> <span className="answer">{formData.musicHappyQuestion}</span></p>
+          <p><span className="question">What is your favourite music genre?</span> <span className="answer">{formData.genreQuestion}</span></p>
+          <p><span className="question">What is your comfort-food?</span> <span className="answer">{formData.comfortFood}</span></p>
+          <p><span className="question">Does food make you happy?</span> <span className="answer">{formData.foodHappyQuestion}</span></p>
+          <p><span className="question">What option would most likely be your go-to breakfast?</span> <span className="answer">{formData.breakfast}</span></p>
+          <p><span className="question">Does animals make you happy?</span> <span className="answer">{formData.animalsHappy}</span></p>
+          <p><span className="question">Favorite Animal:</span> <span className="answer">{formData.favouriteAnimal}</span></p>
+          <p><span className="question">Favorite Disney Animal: </span> <span className="answer">{formData.favouriteDisneyAnimal}</span></p>
+          <button onClick={startOver} onKeyDown={handleKeyPress}>Start Over</button>
         </div>
       )}
     </div>
