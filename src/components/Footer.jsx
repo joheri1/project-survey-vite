@@ -16,14 +16,14 @@ const Footer = () => {
           <div className="github-profile">
             <img src={gitHubLogo} alt="GitHub Logo" className="footer-logo" />
             <a href="https://github.com/Fannyhenriques" aria-label="Link to Fanny's GitHub account" target="_blank" rel="noopener noreferrer">
-              FannyHenriques
+            &nbsp;FannyHenriques&nbsp; 
             </a>
           </div>
           {/* Johanna's GitHub */}
           <div className="github-profile">
             <img src={gitHubLogo} alt="GitHub Logo" className="footer-logo" />
             <a href="https://github.com/Joheri1" aria-label="Link to Johanna's GitHub account" target="_blank" rel="noopener noreferrer">
-              Joheri1
+            &nbsp;&nbsp;&nbsp;&nbsp;Joheri1&nbsp;&nbsp;&nbsp;&nbsp;    
             </a>
           </div>
         </div>

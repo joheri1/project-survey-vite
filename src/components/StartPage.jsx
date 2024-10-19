@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "../styles/StartPage.css"
+import Footer from "./Footer"
 
 export const StartPage = ({ onStart }) => {
   // Function to handle the "Enter" key press
@@ -19,7 +20,8 @@ export const StartPage = ({ onStart }) => {
     </div>
       <div className="start-button">
         <button onClick={onStart} autoFocus>Let´s go!</button>
-      </div></>
-
+      </div>
+      <Footer />
+    </>
   )
 }
