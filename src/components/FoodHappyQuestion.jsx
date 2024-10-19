@@ -7,7 +7,6 @@
 const options = [
     "Yes",
     "No",
-    "Sometimes"
 ]
 
 export const FoodHappyQuestion = ({ value, updateFormData }) => {
@@ -29,8 +28,7 @@ export const FoodHappyQuestion = ({ value, updateFormData }) => {
                                 checked={value === option}
                             /*Check if the option is selected*/
                             />
-                            <span>{option === 'Yes' ? 'Yes' : option === 'No' ? 'No' : 'Sometimes'}
-                            </span>
+                            <span>{option === 'Yes' ? 'Yes' : 'No'}</span>
                         </label>
                     ))}
                 </form>

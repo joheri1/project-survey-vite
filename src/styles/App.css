@@ -279,6 +279,8 @@ p {
     .answer-container {
         color: white;
         position: absolute;
+        justify-content: center;
+        align-items: center;
         top: 40%;
         right: 0;
         left: 0;
