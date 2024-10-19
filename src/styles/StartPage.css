@@ -6,7 +6,7 @@
 
  }
 
-/* ***** StartPage Styling ***** */
+/* ========== Start page layout ========== */
 
  .start-page-container {
    background-color: #0018A4;
@@ -51,7 +51,7 @@
    border-radius: 6px;
  }
 
- /* ***** Footer Styling ***** */
+/* ========== Footer layout ========== */
 
  .footer {
   width: 100%;
@@ -92,12 +92,26 @@
 }
 
 .footer a:hover {
-  text-decoration: underline;
-  color: #ffcc00; 
+  color: #cfcfb5bf; 
 }
 
 .footer-copyright {
   margin-top: 10px;
   margin-right: 50px;
   font-size: 14px;
+}
+
+/* ========== Responsive layout ========== */
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .github-links {
+    display: none;
+  }
+  .footer-copyright {
+    font-size: 12px;
+    padding: 5px 5px; 
+    text-align: center; 
+    margin-right: 0px;
+  }
 }

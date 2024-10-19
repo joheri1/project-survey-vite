@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="github-profile">
             <img src={gitHubLogo} alt="GitHub Logo" className="footer-logo" />
             <a href="https://github.com/Fannyhenriques" aria-label="Link to Fanny's GitHub account" target="_blank" rel="noopener noreferrer">
-            &nbsp;FannyHenriques&nbsp; 
+            FannyHenriques&nbsp; 
             </a>
           </div>
           {/* Johanna's GitHub */}
@@ -30,7 +30,12 @@ const Footer = () => {
       </div>
 
       <div className="footer-copyright">
-        <h3>© 2024 Copyright - Developed by Anna Hansen, Fanny Henriques, and Johanna Eriksson</h3>
+        <h3>
+          © 2024 Copyright - Developed by 
+          <a href="https://github.com/Anna2024WebDev" className="mobile-link" aria-label="Link to Anna's GitHub account" target="_blank" rel="noopener noreferrer"> Anna Hansen</a>, 
+          <a href="https://github.com/Fannyhenriques" className="mobile-link" aria-label="Link to Fanny's GitHub account" target="_blank" rel="noopener noreferrer"> Fanny Henriques</a>, and 
+          <a href="https://github.com/Joheri1" className="mobile-link" aria-label="Link to Johanna's GitHub account" target="_blank" rel="noopener noreferrer"> Johanna Eriksson</a>
+        </h3>
       </div>
     </footer>
   );
