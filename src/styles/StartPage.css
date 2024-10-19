@@ -45,6 +45,8 @@
    justify-content: center;
    margin-top: 20px;
    flex-direction: row;
+   min-width: 44px;
+   min-height: 44px;
    color: #0018A4;
    background-color: #FFFFFF;
    padding: 10px 20px 10px 20px;
