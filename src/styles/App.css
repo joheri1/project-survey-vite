@@ -257,11 +257,14 @@ p {
         text-align: center;
         font-size: 24px;
         line-height: 36px;
+        width: 300px;
     }
     .question-container p {
         text-align: center;
         font-size: 18px;
         line-height: 27px;
+        width: 300px;
+        padding: 0;
     }
     .question-container, .answer-container {
         display: flex;
@@ -299,6 +302,9 @@ p {
         justify-content: center;
     }
     .answer-container-dropdown select {
+        width: 300px;
+    }
+    .answer-container input {
         width: 300px;
     }
 }
