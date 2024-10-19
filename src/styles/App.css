@@ -146,6 +146,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: background-color 0.1s ease, color 0.1s ease;
+    color: #000000;
 }
 
 .radio-label input[type="radio"] {
@@ -285,5 +286,11 @@ p {
     }
     .back-button {
         display: none;
+    }
+    .radio-label {
+        justify-content: center;
+    }
+    .answer-container-dropdown select {
+        width: 300px;
     }
 }
